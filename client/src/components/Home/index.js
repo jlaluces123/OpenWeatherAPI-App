@@ -38,6 +38,7 @@ class Home extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     this.searchCity();
+    this.props.history.push(`/weather/${this.state.searchTerm}`);
   };
 
   render() {
